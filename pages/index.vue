@@ -1,7 +1,9 @@
 <template>
   <div>
     <v-content>
-      It Worked!
+    Hello guys
+      <bars/>
+      <toggle/>
     </v-content>
   </div>
 </template>

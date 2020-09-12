@@ -6,11 +6,11 @@
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
-      <VuetifyLogo/>
+    <VuetifyLogo/>
     </v-app-bar>
 
     <!-- Body -->
-    <v-content light>
+    <v-content light>.'
       <nuxt /> 
     </v-content>
     
@@ -33,5 +33,6 @@ export default {}
 
    #inspire {
     background-color: white;
+    color: black;
   }
 </style>
