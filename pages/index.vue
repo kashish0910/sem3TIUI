@@ -4,6 +4,7 @@
     Hello guys
       <bars/>
       <toggle/>
+      <cards/>
     </v-content>
   </div>
 </template>
