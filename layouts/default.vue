@@ -7,15 +7,21 @@
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
        
- <v-row>
-   <v-col md="5">
+
      <VuetifyLogo/>
-   </v-col>
-   <v-col md="7">
-    <topbars/>
+     <template v-slot:extension>
+    <v-spacer></v-spacer>
+    <insurance/>
+    <aboutus/>
+    <insta/>
+    <contactus/>
+    <blogs/>
+    <signin/>
+     </template>
+    
+
      
-</v-col>
-  </v-row>
+
   
     </v-app-bar>
     

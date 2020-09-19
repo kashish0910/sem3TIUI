@@ -29,7 +29,16 @@
             class="mb-12"
             color="black"
             height="440px"
-          ><forms2/></v-card>
+            ><v-container>
+                <v-row justify="center">
+                  <buttons/> 
+               
+               
+                 <userform/>
+               </v-row>
+             </v-container>
+          
+          </v-card>
 
           <v-btn
             color="primary"
