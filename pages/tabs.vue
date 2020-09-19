@@ -3,10 +3,9 @@
     <v-content>
       <breadcrumb/>
 <v-container>
- <v-row justify="center">
+ <v-row>
 
     <h2>Welcome to Lifeline - Individual and Family Floater Plans </h2>
-   
  </v-row>
  <v-row>
    <v-col md="3">

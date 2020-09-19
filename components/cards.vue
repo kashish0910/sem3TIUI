@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto"
+    class="string"
     max-width="500"
   >
     <v-system-bar

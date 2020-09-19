@@ -3,14 +3,25 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="red" dark fixed app>
+    <v-app-bar color="blue" dark fixed app>
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
-    <VuetifyLogo/>
+       
+ <v-row>
+   <v-col md="5">
+     <VuetifyLogo/>
+   </v-col>
+   <v-col md="7">
+    <topbars/>
+     
+</v-col>
+  </v-row>
+  
     </v-app-bar>
+    
 
     <!-- Body -->
-    <v-content light>.'
+    <v-content light>
       <nuxt /> 
     </v-content>
     
@@ -33,6 +44,6 @@ export default {}
 
    #inspire {
     background-color: white;
-    color: black;
+    color: blue;
   }
 </style>
