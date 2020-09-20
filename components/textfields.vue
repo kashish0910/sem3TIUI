@@ -1,0 +1,12 @@
+<template>
+  <v-form>
+    <v-container>
+      <v-row>
+          <v-text-field
+            label="Outlined"
+            outlined>
+          </v-text-field>
+        </v-row>
+    </v-container>
+  </v-form>
+</template>

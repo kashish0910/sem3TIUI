@@ -1,14 +1,14 @@
 <template>
   <img
-    class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="vuetify-logo.svg"
+    class="RoyalSundaramLogo"
+    alt="RoyalSundaramLogo"
+    src="RoyalSundaramLogo.png"
   >
 </template>
 
 <style>
-.VuetifyLogo {
-  height: 50px;
-  width: 50px;
+.RoyalSundaramLogo {
+  height: 100px;
+  width: 240px;
 }
 </style>

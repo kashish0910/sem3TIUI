@@ -3,7 +3,8 @@
     <v-content>
      
 
-     <buttons/>
+     <loading/>
+     <datepicker/>
     
     </v-content>
   </div>

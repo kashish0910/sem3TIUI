@@ -4,19 +4,22 @@
     
     <!--Header -->
     <v-app-bar color="blue" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+      <v-toolbar-title></v-toolbar-title>
        <!-- Component Example -->
-       
-
+     
      <VuetifyLogo/>
-     <template v-slot:extension>
+    <template v-slot:extension>
+      
     <v-spacer></v-spacer>
     <insurance/>
     <aboutus/>
-    <insta/>
+    <instarenew/>
     <contactus/>
     <blogs/>
     <signin/>
+    <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
      </template>
     
 
@@ -28,6 +31,7 @@
 
     <!-- Body -->
     <v-content light>
+      <breadcrumb/>
       <nuxt /> 
     </v-content>
     
@@ -50,6 +54,6 @@ export default {}
 
    #inspire {
     background-color: white;
-    color: blue;
+    color: black;
   }
 </style>

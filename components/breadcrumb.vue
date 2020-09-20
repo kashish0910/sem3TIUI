@@ -1,11 +1,5 @@
 <template>
   <div>
-    <!-- <v-breadcrumbs :items="items">
-      <template v-slot:divider>
-        <v-icon>mdi-forward</v-icon>
-      </template>
-    </v-breadcrumbs> -->
-
     <v-breadcrumbs :items="items">
       <template v-slot:divider>
         <v-icon color="black">mdi-chevron-right</v-icon>
