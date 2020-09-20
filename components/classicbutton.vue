@@ -5,6 +5,7 @@
 
     style="min-height: 100px;"
   >
+    <!-- the @click.... helps in extending the card with the text after a click -->
     <v-col class="shrink" >
       <v-btn justify="center"
         class="ma-2"
@@ -29,13 +30,10 @@
         </v-card>
       </v-expand-transition>
     </v-col>
-
+       <!-- display property -->
     <div class="mx-4 hidden-sm-and-down"></div>
 
-    
-  
-  
- </v-row>
+    </v-row>
 </template>
 
 <script>

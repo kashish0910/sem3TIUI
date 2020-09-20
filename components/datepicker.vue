@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row justify="center">
-      <v-col cols="12" lg="6">
+      <v-col cols="12" md="6">
         <v-menu
           ref="menu1"
           v-model="menu1"
@@ -12,12 +12,14 @@
           min-width="290px"
         >
           <template v-slot:activator="{ on, attrs }">
+            <!-- text field with label, hint and persistent hint -->
+            <!-- v-bind used to pass down the attributes...used in case of data changing -->
+            <!-- blur is used to loose focus ...here date element loses focus when changed to another -->
             <v-text-field
               v-model="dateFormatted"
               label="Date of Birth of Insured"
               hint="MM/DD/YYYY format"
               persistent-hint
-              
               v-bind="attrs"
               @blur="date = parseDate(dateFormatted)"
               v-on="on"
@@ -26,36 +28,9 @@
           </template>
           <v-date-picker v-model="date" no-title @input="menu1 = false"></v-date-picker>
         </v-menu>
-        <!-- <p>Date in ISO format: <strong>{{ date }}</strong></p> -->
+        
       </v-col>
 
-
-
-      <!-- <v-col cols="12" lg="6">
-        <v-menu
-          v-model="menu2"
-          :close-on-content-click="false"
-          transition="scale-transition"
-          offset-y
-          max-width="290px"
-          min-width="290px"
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-text-field
-              v-model="computedDateFormatted"
-              label="Date (read only text field)"
-              hint="MM/DD/YYYY format"
-              persistent-hint
-              prepend-icon="event"
-              readonly
-              v-bind="attrs"
-              v-on="on"
-            ></v-text-field>
-          </template>
-          <v-date-picker v-model="date" no-title @input="menu2 = false"></v-date-picker>
-        </v-menu>
-        <p>Date in ISO format: <strong>{{ date }}</strong></p>
-      </v-col> -->
     </v-row>
   </v-container>
 </template>
@@ -66,14 +41,7 @@
       date: new Date().toISOString().substr(0, 10),
       dateFormatted: vm.formatDate(new Date().toISOString().substr(0, 10)),
       menu1: false,
-      menu2: false,
     }),
-
-    computed: {
-      computedDateFormatted () {
-        return this.formatDate(this.date)
-      },
-    },
 
     watch: {
       date (val) {

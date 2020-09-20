@@ -4,7 +4,7 @@
      
 
      <loading/>
-     <datepicker/>
+     
     
     </v-content>
   </div>

@@ -2,10 +2,10 @@
   <v-card id="create">
     <v-container fluid>
       <v-row justify="center">
-       
-        <!-- <v-col cols="12" sm="6" md="4"> -->
-          <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
-           <v-radio-group row v-model="transition" hide-details>
+
+        <!-- two rows of radio buttons are formed with different transitions which helps in selecting 
+        one at a time and deselects if clicked on another -->
+         <v-radio-group row v-model="transition" hide-details>
             <v-col>
             <v-radio value="slide-y-transition" label="05 Lakhs"></v-radio>
             </v-col>
@@ -21,20 +21,10 @@
             <v-col>
             <v-radio value="scale-transition" label="50 Lakhs"></v-radio>
             </v-col>
-           </v-radio-group>
-        <!-- </v-col> -->
+         </v-radio-group>
       </v-row>
     </v-container>
-     <v-speed-dial
-      v-model="fab"
-      :top="top"
-      :bottom="bottom"
-      :right="right"
-      :left="left"
-      :direction="direction"
-      :open-on-hover="hover"
-      :transition="transition"
-    ></v-speed-dial> 
+    
   </v-card>
 </template>
 
@@ -52,32 +42,6 @@
       left: false,
       transition: 'slide-y-reverse-transition',
     }),
-
-    computed: {
-      activeFab () {
-        switch (this.tabs) {
-          case 'one': return { class: 'purple', icon: 'account_circle' }
-          case 'two': return { class: 'red', icon: 'edit' }
-          case 'three': return { class: 'green', icon: 'keyboard_arrow_up' }
-          default: return {}
-        }
-      },
-    },
-
-    watch: {
-      top (val) {
-        this.bottom = !val
-      },
-      right (val) {
-        this.left = !val
-      },
-      bottom (val) {
-        this.top = !val
-      },
-      left (val) {
-        this.right = !val
-      },
-    },
   }
 </script>
 

@@ -5,10 +5,9 @@
        ref="form"
         v-model="valid"
        lazy-validation>
-  
+         <!-- three text fields were created within a row and column -->
         <v-container>
-          <!-- <v-row justify="center"> -->
-          <!-- <v-col cols="12" sm="6" md="8"> -->
+        
           <v-text-field
             v-model="name"
             :counter="10"
@@ -17,8 +16,7 @@
             outlined>
             required>
          </v-text-field>
-          <!-- </v-col> -->
-          <!-- </v-row> -->
+          
   
          <v-text-field
            v-model="email"
@@ -35,14 +33,14 @@
            outlined>
            required>
          </v-text-field>
-
-      </v-container>
+       </v-container>
      </v-form>
    </v-col>
   </v-row>
 </template>
 
 <script>
+      // email valid makes sure that a correct format is types
   export default {
     data: () => ({
       valid: true,

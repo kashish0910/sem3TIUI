@@ -1,0 +1,93 @@
+<template>
+  <v-card id="create">
+    <v-container fluid>
+      <v-row justify="center">
+        <!-- two rows of radio buttons are formed with different transitions which helps in selecting 
+        one at a time and deselects if clicked on another -->
+       
+        <!-- <v-col cols="12" sm="6" md="4"> -->
+          <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
+           <v-radio-group row v-model="transition" hide-details>
+           
+            <v-col>
+            <v-radio value="slide-y-transition" label="Delhi"></v-radio>
+            </v-col>
+             <v-col>
+            <v-radio value="slide-y-reverse-transition" label="Hyderabad"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="slide-x-transition" label="Mumbai"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="slide-x-reverse-transition" label="Bengalaru"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="scale-transition" label="Thane"></v-radio>
+            </v-col>
+            </v-radio-group>
+      </v-row>
+           
+     <v-row justify="center">
+        <v-radio-group row v-model="transition" hide-details>
+         <v-row justify="center">
+            <v-col>
+            <v-radio value="scale-y-transition" label="Pune"></v-radio>
+            </v-col>
+             <v-col>
+            <v-radio value="scale-y-reverse-transition" label="Nagpur"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="scale-x-transition" label="Vadodara"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="scale-x-reverse-transition" label="Chennai"></v-radio>
+            </v-col>
+            <v-col>
+            <v-radio value="slide-transition" label="Gurgaon"></v-radio>
+            </v-col>
+         </v-row>
+        </v-radio-group>
+        
+      </v-row>
+
+   </v-container>
+   <v-speed-dial
+      v-model="fab"
+      :top="top"
+      :bottom="bottom"
+      :right="right"
+      :left="left"
+      :direction="direction"
+      :open-on-hover="hover"
+      :transition="transition"
+   ></v-speed-dial> 
+  </v-card>
+</template>
+
+<script>
+  export default {
+  data: () => ({
+      direction: 'top',
+      fab: false,
+      fling: false,
+      hover: false,
+      tabs: null,
+      top: false,
+      right: true,
+      bottom: true,
+      left: false,
+      transition: 'slide-y-reverse-transition',
+    }),
+  }
+</script>
+
+<style>
+  /* This is for documentation purposes and will not be needed in your application */
+  #create .v-speed-dial {
+    position: absolute;
+  }
+
+  #create .v-btn--floating {
+    position: relative;
+  }
+</style>
