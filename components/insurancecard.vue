@@ -18,7 +18,7 @@
     </v-card-subtitle>
      
      <!-- the lines are broken with <br> -->
-    <v-card-text>
+    <v-card-text class="text justify">
       Lifeline is a holistic plan from Royal Sundaram that covers the health insurance needs of you and your family.<br><br>
       * 100% Reload of Sum Insured at no extra cost.<br><br>
       * Double your Sum Insured in 5 claim free years.

@@ -8,7 +8,7 @@
       <!-- Component Example -->
       <v-spacer></v-spacer>
       <v-card
-       ncolor="blue lighten-3"
+       color="blue lighten-3"
        height="30">
         <p>New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
       </v-card>
