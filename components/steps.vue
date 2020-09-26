@@ -1,4 +1,6 @@
 <template>
+<v-row>
+  <v-col md=12 sm=10>
   <v-stepper v-model="e1">
     <v-stepper-header>
       <!-- 4 stepper form..once one completed, it takes to second with a click -->
@@ -21,15 +23,17 @@
     <v-stepper-items>
       <!-- components added in the form -->
       <v-stepper-content step="1">
-        <v-card
+             <v-card
           class="mb-12"
           color="black"
           height="520px">
          <v-container>
            <v-row justify="center">
+             <v-col cols="12" md="10" sm="10">
              <typeofcover/> 
              <userform/>
              <yesbutton/>
+             </v-col>
             </v-row>
           </v-container>        
        </v-card>
@@ -168,6 +172,8 @@
       </v-stepper-content>
     </v-stepper-items>
   </v-stepper>
+  </v-col>
+  </v-row>
 </template>
 
 <script>
