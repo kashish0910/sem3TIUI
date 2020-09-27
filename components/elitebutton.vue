@@ -16,18 +16,26 @@
       </v-btn>
 
       <v-expand-transition>
+        <v-row>
+          
         <v-card 
           v-show="expand"
           height="260"
           width="300"
           class="mx-auto">
           <v-card-text>
-          1. Worldwide emergency hospitalization   (excluding US/Canada)<br><br>
-          2. International treatment for 11 CI<br><br>
-          3. Maternity & OPD covered<br><br>
-          4. Pre-Existing Disease waiting period - 2   years
+            <v-row>
+          1. Worldwide emergency hospitalization   (excluding US/Canada)</v-row>
+          <v-row>
+          2. International treatment for 11 CI</v-row>
+          <v-row >
+          3. Maternity & OPD covered</v-row>
+          <v-row >
+          4. Pre-Existing Disease waiting period - 2   years </v-row>
          </v-card-text>
        </v-card>
+       
+        </v-row>
       </v-expand-transition>
     </v-col>
     <!-- display property -->

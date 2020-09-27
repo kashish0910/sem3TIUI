@@ -2,7 +2,8 @@
 <v-app id="inspire">
 <v-row>
   <v-col md=12 sm=12 cols=12 >
-  <v-stepper v-model="e1"  color= "rgb(205, 231, 248)">
+  <v-stepper v-model="e1" 
+ >
     <v-stepper-header>
       <!-- 4 stepper form..once one completed, it takes to second with a click -->
       <v-stepper-step :complete="e1 > 1" step="1" >Proposer's Details</v-stepper-step>
@@ -29,7 +30,7 @@
              <v-card
           class="mb-12"
           color="black"
-          height="520px">
+          height="700px">
          <v-container>
            <v-row justify="center">
              <v-col cols="10" md="10" sm="10">
@@ -53,26 +54,25 @@
         </v-btn>
         </v-row>
       </v-stepper-content>
-      
-      
+
       <v-stepper-content step="2">
         <v-card
           class="mb-12"
           color="black"
-          height="400px">
+          height="500px">
          <v-container>
              <v-row justify="center">
       Select Plan Type
       </v-row>
              <v-row justify="center">
                <!-- <buttons/>  -->
-               <v-col md="4" sm="4" cols="4"> 
+               <v-col md="4" cols="12" sm="4"> 
                  <classicbutton/>
                </v-col>
-               <v-col md="4" sm="4" cols="4"> 
+               <v-col md="4" cols="12" sm="4"> 
                  <supremebutton/>
                </v-col>
-               <v-col md="4" sm="4" cols="4"> 
+               <v-col md="4" cols="12" sm="4"> 
                  <elitebutton/>
                </v-col>
               </v-row>
@@ -100,17 +100,17 @@
          <v-card
           class="mb-12"
           color="black"
-          height="610px">
+          height="830px">
           <v-container>
              <v-row justify="center">
                <!-- <buttons/>  -->
-               <v-col md=4> 
+               <v-col md="4"  sm="4"> 
                  <classicbutton/>
                </v-col>
-               <v-col md=4> 
+               <v-col md="4" sm="4"> 
                  <supremebutton/>
                </v-col>
-               <v-col md=4> 
+               <v-col md="4"  sm="4" class="mt-0"> 
                  <elitebutton/>
                </v-col>
              </v-row>
@@ -147,7 +147,7 @@
         <v-card
           class="mb-12"
           color="black"
-          height="400px">
+          height="500px">
           <v-container>
              <v-row justify="center">
       Select Place
@@ -186,7 +186,6 @@
   </v-row>
   </v-app>
 </template>
-
 <script>
   export default {
     data () {
@@ -197,12 +196,5 @@
   }
 </script>
 
-<style> 
- 
-   
-   /* background colour was changed from white to lighter blue */
-   #inspire {
-    background-color: rgb(205, 231, 248);
-    
-  }
-</style>
+
+

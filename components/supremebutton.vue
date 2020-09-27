@@ -12,18 +12,26 @@
       </v-btn>
 
       <v-expand-transition>
+        <v-row>
+          
         <v-card 
           v-show="expand"
           height="260"
-          width="950"
+          width="300"
           class="mx-auto">
           <v-card-text>
-          1. 20% No Claim Bonus every year up to max of 100%<br><br>
-          2. Annual Health Check up & Emergency domestic evacuation<br><br>
-          3. Second opinion for 11 Critical illnesses<br><br>
-          4. Second opinion for 11 Critical illnesses
+            <v-row >
+          1. 20% No Claim Bonus every year up to max of 100%</v-row>
+          <v-row >
+          2. Annual Health Check up & Emergency domestic evacuation</v-row>
+          <v-row >
+          3. Second opinion for 11 Critical illnesses</v-row>
+          <v-row >
+          4. Second opinion for 11 Critical illnesses</v-row>
          </v-card-text>
         </v-card>
+        
+        </v-row>
       </v-expand-transition>
     </v-col>
     <!-- display property -->

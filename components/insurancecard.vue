@@ -1,11 +1,14 @@
 <template>
+<v-row>
+  <v-col md="12" sm="12" offset-sm="center">
   <v-card
     class="mx-auto"
-    max-width="400"
+    max-width="500"
+    color="blue"
   >
     <v-img
       src="Health-Insurance-renew.png"
-      height="410px"
+      height="330px"
     ></v-img>
 
     <v-card-title>
@@ -25,6 +28,8 @@
     </v-card-text>
       
   </v-card>
+  </v-col>
+  </v-row>
 </template>
 
 <script>

@@ -3,19 +3,28 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="blue" height="25" dark fixed app>
+    <v-app-bar color="white" height="25" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
       <!-- Component Example -->
       <v-spacer></v-spacer>
+      <v-row >
+        
+          
+           <v-col  md="3" class="hidden-sm-and-down"> </v-col>  
+        <v-col md= "9" class="hidden-sm-and-down"> 
       <v-card
        color="blue lighten-3"
-       height="30">
+       height="30"
+       class="px-md-2 px-sm-2 px-0">
         <p>New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor Claim Intimation / Crop Insurance: 1800 568 9999</p>
       </v-card>
+        </v-col>
+        </v-row>
      
       <!-- components added which are persistent throughout -->
       <!-- extention added to toolbar -->
       <template v-slot:extension>
+        <v-row class="hidden-sm-and-down">
         <VuetifyLogo/>
         <v-spacer></v-spacer>
         <insurance/>
@@ -25,8 +34,20 @@
         <blogs/>
         <signin/>
        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
+          <v-icon color="black">mdi-magnify</v-icon>
        </v-btn>
+       </v-row>
+       
+
+       <v-row class= "hidden-md-and-up">
+         <v-col sm="10">
+          <VuetifyLogo/>
+         </v-col>
+         <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0" >
+          <hamburger/>
+         </v-col>
+         </v-row>
+       
      </template>
     
     </v-app-bar>

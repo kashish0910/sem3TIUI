@@ -1,7 +1,10 @@
 <template>
-  <v-card id="create">
+ <!-- <v-card color= "rgb(205, 231, 248)" id="create" flat> -->
+   <v-card color= "black" id="create" flat>
+ <!-- <v-card id="create"> -->
     <v-container fluid>
       <v-row justify="center">
+        <v-col md="12" sm="12">
         <!-- two rows of radio buttons are formed with different transitions which helps in selecting 
         one at a time and deselects if clicked on another -->
        
@@ -9,44 +12,47 @@
           <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
            <v-radio-group row v-model="transition" hide-details>
            
-            <v-col>
+            <v-col sm="2">
             <v-radio value="slide-y-transition" label="Delhi"></v-radio>
             </v-col>
-             <v-col>
+             <v-col sm="3">
             <v-radio value="slide-y-reverse-transition" label="Hyderabad"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="2">
             <v-radio value="slide-x-transition" label="Mumbai"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="3">
             <v-radio value="slide-x-reverse-transition" label="Bengalaru"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="2">
             <v-radio value="scale-transition" label="Thane"></v-radio>
             </v-col>
             </v-radio-group>
+            </v-col>
       </v-row>
            
      <v-row justify="center">
+       <v-col md="12" sm="12">
         <v-radio-group row v-model="transition" hide-details>
          <v-row justify="center">
-            <v-col>
+            <v-col sm="2">
             <v-radio value="scale-y-transition" label="Pune"></v-radio>
             </v-col>
-             <v-col>
+             <v-col sm="2">
             <v-radio value="scale-y-reverse-transition" label="Nagpur"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="3">
             <v-radio value="scale-x-transition" label="Vadodara"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="2">
             <v-radio value="scale-x-reverse-transition" label="Chennai"></v-radio>
             </v-col>
-            <v-col>
+            <v-col sm="2">
             <v-radio value="slide-transition" label="Gurgaon"></v-radio>
             </v-col>
          </v-row>
         </v-radio-group>
+        </v-col>
         
       </v-row>
 

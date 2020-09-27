@@ -1,11 +1,11 @@
 <template>
   <v-row
   
-    justify="center"
+   justify="center"
 
-    style="min-height: 100px;"
-  >
-    <!-- the @click.... helps in extending the card with the text after a click -->
+   style="min-height: 100px;">
+  
+     <!-- the @click.... helps in extending the card with the text after a click -->
     <v-col class="shrink" >
       <v-btn justify="center"
         class="ma-2"
@@ -16,29 +16,39 @@
       </v-btn>
 
       <v-expand-transition>
+        <v-row>
+          
         <v-card 
           v-show="expand"
           height="260"
-          width="950"
+          width="300"
           class="mx-auto">
           <v-card-text>
-          1. Organ donor expenses covered up to Sum Insured<br><br>
-          2. Pre & Post hospitalization covered up to Sum Insured<br><br>
-          3. Covers Ayush treatment & vaccination for animal bite<br><br>
-          4. Pre-Existing Disease waiting period - 4 years
+             <v-row>
+          1. Organ donor expenses covered up to Sum Insured</v-row>
+          <v-row>
+          2. Pre & Post hospitalization covered up to Sum Insured</v-row>
+          <v-row >
+          3. Covers Ayush treatment & vaccination for animal bite</v-row >
+          <v-row >
+          4. Pre-Existing Disease waiting period - 4 years</v-row>
          </v-card-text>
-        </v-card>
+       </v-card>
+       
+        </v-row>
       </v-expand-transition>
     </v-col>
-       <!-- display property -->
+    <!-- display property -->
     <div class="mx-4 hidden-sm-and-down"></div>
 
-    </v-row>
+    
+  </v-row>
 </template>
 
 <script>
   export default {
     data: () => ({
+      
       expand: false,
     }),
   }

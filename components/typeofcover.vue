@@ -5,14 +5,14 @@
     </v-row>
     <v-row justify="center">
       <!-- offset used to create space between the columns -->
-      <v-col cols=12 sm=2 md=3 offset-md="0.001">
+      <v-col cols=12 sm=5 md=4 offset-md="0.5" class="ml-10">
         <div class="my-2">
             <v-btn color="blue" dark large>Individual Plan  </v-btn>
          </div>
       </v-col>
-       <v-col cols=12 sm=2 md=2 >   
+       <v-col cols=12 sm=4 md=4 class="ml-16 mr-6" >   
           <div class="my-2">
-            <v-btn color="blue" dark large offset-md="0.1">Family Floater</v-btn>
+            <v-btn color="blue" dark large offset-md="0.5">Family Floater</v-btn>
           </div>
        </v-col>
     </v-row>

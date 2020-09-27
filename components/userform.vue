@@ -1,6 +1,6 @@
 <template>
  <v-row justify="center">
-   <v-col md="7">
+   <v-col md="12" cols=12>
      <v-form
        ref="form"
         v-model="valid"

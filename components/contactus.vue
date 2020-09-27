@@ -1,4 +1,5 @@
 <template>
+
   <!-- Contact Us Button in the global navigation which is persistent throughout the website  --> 
- <v-btn text large>Contact Us</v-btn>
+ <v-btn text large color= "rgb(29, 83, 119)">Contact Us</v-btn>
 </template>

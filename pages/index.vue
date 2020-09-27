@@ -1,32 +1,36 @@
-<template>
-  <div>
-    <v-content>
-    
+  <template>
+    <div>
       
-     <v-container>
-        <!-- this page has the stepper form with heading and card -->
-       <v-row>
-         <v-col cols="12" lg="1" md="1" sm="1">
-           
-         </v-col>
-        
-        
-         <v-col cols="12" lg="3" md="3" sm="3">
-           <insurancecard/>
-         </v-col>
-         <v-col cols="12" lg="7" md="7" sm="7">
-           <h1>Welcome to Lifeline - Individual and Family Floater Plans </h1>
-           <steps/>
-         </v-col>
-         
-       </v-row>
-     </v-container>
-    </v-content>
-  </div>
-</template>
+      
+      <v-content>
+      <v-container fluid style="margin: 0px; padding: 0px; width: 100%">
+          <!-- this page has the stepper form with heading and card -->
+        <v-row class="mx-md-12 mx-sm-8 mx-0">
+          <v-col justify="center" cols="12" sm="12" class="hidden-md-and-up" >
+          <h2> Lifeline Health Insurance </h2>
+          </v-col>
+          
+        <v-col  sm="1" class="hidden-md-and-up"> </v-col>   
+        <v-col cols="12" lg="3" md="4" sm="10">
+            <insurancecard/>
+        </v-col>
+          <v-col cols="12" lg="9" md="8" sm="12" class="hidden-sm-and-down" >
+            <h2>Welcome to Lifeline - Individual and Family Floater Plans </h2>
+            <steps/>
+          </v-col>
+            <v-col justify="center" cols="12" lg="9" md="8" sm="12" class="hidden-md-and-up" >
+            <h3>Welcome to Lifeline Insurance - Individual and Family Floater Plans </h3>
+            <verticalsteps/>
+          </v-col>
+          
+          </v-row>
+      </v-container>
+      </v-content>
+    </div>
+  </template>
 
-<script>
-</script>
+  <script>
+  </script>
 
-<style> 
-</style>
+  <style> 
+  </style>
