@@ -1,16 +1,17 @@
 <template>
  <!-- <v-card color= "rgb(205, 231, 248)" id="create" flat> -->
-   <v-card color= "black" id="create" flat>
- <!-- <v-card id="create"> -->
+  <v-card color= "black" id="create" flat>
+    <!-- <v-card id="create"> -->
     <v-container fluid>
       <v-row justify="center">
         <v-col md="12" sm="12">
-        <!-- two rows of radio buttons are formed with different transitions which helps in selecting 
-        one at a time and deselects if clicked on another -->
+         <!-- two rows of radio buttons are formed with different transitions which helps in selecting 
+         one at a time and deselects if clicked on another -->
        
-        <!-- <v-col cols="12" sm="6" md="4"> -->
+         <!-- <v-col cols="12" sm="6" md="4"> -->
           <!-- <v-subheader >Select the Sum Insured</v-subheader> -->
-           <v-radio-group row v-model="transition" hide-details>
+          <!-- columns added and defined -->
+          <v-radio-group row v-model="transition" hide-details>
            
             <v-col sm="2">
             <v-radio value="slide-y-transition" label="Delhi"></v-radio>
@@ -27,8 +28,8 @@
             <v-col sm="2">
             <v-radio value="scale-transition" label="Thane"></v-radio>
             </v-col>
-            </v-radio-group>
-            </v-col>
+         </v-radio-group>
+        </v-col>
       </v-row>
            
      <v-row justify="center">
@@ -55,7 +56,6 @@
         </v-col>
         
       </v-row>
-
    </v-container>
    <v-speed-dial
       v-model="fab"

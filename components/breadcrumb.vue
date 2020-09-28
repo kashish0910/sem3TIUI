@@ -1,17 +1,16 @@
 <template>
-<v-row>
-      <v-col md="5" sm="12" cols="12">
-  <div>
-    
-    <v-breadcrumbs :items="items">
-      <template v-slot:divider>
-        <!-- Added color=black to make the icon black as the background is light -->
-        <v-icon color="black">mdi-chevron-right</v-icon>
-      </template>
-    </v-breadcrumbs>
-  </div>
-      </v-col>
-      </v-row>
+ <v-row>
+    <v-col md="5" sm="12" cols="12">
+     <div>
+       <v-breadcrumbs :items="items">
+         <template v-slot:divider>
+           <!-- Added color=black to make the icon black as the background is light -->
+           <v-icon color="black">mdi-chevron-right</v-icon>
+         </template>
+       </v-breadcrumbs>
+     </div>
+   </v-col>
+ </v-row>
 </template>
 
 <script>

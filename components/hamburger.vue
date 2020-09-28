@@ -1,10 +1,10 @@
 <template>
   <div class="text-center">
+    <!-- open on hoven command allows the card to slide down when hovered upon -->
     <v-menu
       open-on-hover
       top
-      offset-y
-    >
+      offset-y>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
@@ -12,8 +12,7 @@
           v-bind="attrs"
           v-on="on"
           height="48"
-          width="20"
-        >
+          width="20">
           MENU
         </v-btn>
       </template>

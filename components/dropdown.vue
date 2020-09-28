@@ -1,6 +1,7 @@
 <template>
   <v-container id="dropdown-example">
     <v-row justify="center">
+      <!-- grid added for responsiveneess -->
       <v-col cols="12" md="6" sm=8>
         <p>Please Select your TPA</p>
          <!-- the overflow button gives the command for dropdown when clicked -->
@@ -13,9 +14,7 @@
           outlined
         ></v-overflow-btn>
       </v-col>
-
-      
-    </v-row>
+   </v-row>
   </v-container>
 </template>
 

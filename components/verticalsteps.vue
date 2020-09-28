@@ -25,6 +25,7 @@
     <v-stepper-items>
       <!-- components added in the form -->
       <v-stepper-content step="1">
+        <!-- rows and columns defined to make the step responsive -->
         <v-row>
   <v-col md=12 sm=12 cols=12>
              <v-card
