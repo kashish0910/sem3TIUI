@@ -32,12 +32,12 @@
          <instarenew/>
          <contactus/>
          <blogs/>
+         
          <signin/>
          <v-btn icon>
            <v-icon color="black">mdi-magnify</v-icon>
          </v-btn>
        </v-row>
-       
        <!-- this column is hidden in md screen size and in screen size bigger than md -->
        <v-row class= "hidden-md-and-up">
          <v-col sm="10">
