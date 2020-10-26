@@ -1,88 +1,102 @@
 <template>
- <v-row justify="center">
-   <v-col md="12" cols=12>
-     <v-form
-       ref="form"
-        v-model="valid"
-       lazy-validation>
-         <!-- three text fields were created within a row and column -->
+  <v-row justify="center">
+    <v-col md="12" cols="12">
+      <v-form ref="form" v-model="valid" lazy-validation>
+        <!-- three text fields were created within a row and column -->
         <v-container>
-        
           <v-text-field
             v-model="name"
             :counter="10"
+            color="black"
+            light
+            fixed
+            app
             :rules="nameRules"
             label="Name"
-            outlined>
+            class="required"
+            outlined
+          >
             required>
-         </v-text-field>
-          
-  
-         <v-text-field
-           v-model="email"
-           :rules="emailRules"
-           label="E-mail"
-            outlined>
-           required>
-         </v-text-field>
+          </v-text-field>
 
-         <v-text-field
-           v-model="phonenumber"
-           :rules="phonenumberRules"
-           label="Phone Number"
-           outlined>
-           required>
-         </v-text-field>
-       </v-container>
-     </v-form>
-   </v-col>
+          <v-text-field
+            v-model="email"
+            color="black"
+            light
+            fixed
+            app
+            :rules="emailRules"
+            label="E-mail"
+            outlined
+          >
+            required>
+          </v-text-field>
+
+          <v-text-field
+            v-model="phonenumber"
+            color="black"
+            light
+            fixed
+            app
+            :rules="phonenumberRules"
+            label="Phone Number"
+            outlined
+          >
+            required>
+          </v-text-field>
+        </v-container>
+      </v-form>
+    </v-col>
   </v-row>
-</template>
+</template>2
 
 <script>
-      // email valid makes sure that a correct format is types
-  export default {
-    data: () => ({
-      valid: true,
-      name: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-      ],
-      email: '',
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-      ],
-      phonenumer: '',
-      phonenumberRules: [
-        v => !!v || 'Phone Number is required',
-        // v => /.+@.+\..+/.test(v) || 'Phone Number must be valid',
-      ],
+// email valid makes sure that a correct format is types
+export default {
+  data: () => ({
+    valid: true,
+    name: "",
+    nameRules: [
+      (v) => !!v || "Name is required",
+      (v) => (v && v.length <= 10) || "Name must be less than 10 characters",
+    ],
+    email: "",
+    emailRules: [
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+    ],
+    phonenumer: "",
+    phonenumberRules: [
+      (v) => !!v || "Phone Number is required",
+      // v => /.+@.+\..+/.test(v) || 'Phone Number must be valid',
+    ],
 
+    // select: null,
+    // items: [
+    //   'Item 1',
+    //   'Item 2',
+    //   'Item 3',
+    //   'Item 4',
+    // ],
+    checkbox: true,
+  }),
 
-
-
-      // select: null,
-      // items: [
-      //   'Item 1',
-      //   'Item 2',
-      //   'Item 3',
-      //   'Item 4',
-      // ],
-      checkbox: false,
-    }),
-
-    methods: {
-      validate () {
-        this.$refs.form.validate()
-      },
-      reset () {
-        this.$refs.form.reset()
-      },
-      resetValidation () {
-        this.$refs.form.resetValidation()
-      },
+  methods: {
+    validate() {
+      this.$refs.form.validate();
     },
-  }
+    reset() {
+      this.$refs.form.reset();
+    },
+    resetValidation() {
+      this.$refs.form.resetValidation();
+    },
+  },
+};
 </script>
+
+<style>
+.required {
+  color: blue;
+}
+</style>

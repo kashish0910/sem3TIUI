@@ -6,19 +6,27 @@
    <v-col class="shrink" >
       <v-btn justify="center"
         class="ma-2"
-        color="primary"
+        color="#223C77" light outlined
+        width="180"
+        height="100"
         @click="expand = !expand">
         CLASSIC
       </v-btn>
+    
+
      <v-expand-transition>
         <v-row>
           <!-- added height and width to customize the size of the card -->
 
           <v-card 
+          
            v-show="expand"
            height="260"
            width="300"
-           class="mx-auto">
+           class="mx-auto"
+           color="white">
+           <strong class="blue--text text--darken 4">
+
            <v-card-text>
               <v-row>
               1. Organ donor expenses covered up to Sum Insured</v-row>
@@ -29,9 +37,11 @@
              <v-row >
              4. Pre-Existing Disease waiting period - 4 years</v-row>
            </v-card-text>
+           </strong>
          </v-card>
        </v-row>
       </v-expand-transition>
+   
     </v-col>
     <!-- display property -->
     <div class="mx-4 hidden-sm-and-down"></div>

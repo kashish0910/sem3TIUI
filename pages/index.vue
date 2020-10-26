@@ -13,12 +13,12 @@
             </v-col>
             <!-- this column is hidden in md screen size and in screen size bigger than md -->
             <v-col  sm="1" class="hidden-md-and-up"> </v-col>   
-            <v-col cols="12" lg="3" md="4" sm="10">
+            <v-col cols="12" lg="3" md="5" sm="10">
               <insurancecard/>
             </v-col>
             <!-- this column is hidden in sm screen size and in screen size smalled than sm -->
-            <v-col cols="12" lg="9" md="8" sm="12" class="hidden-sm-and-down" >
-              <h2>Welcome to Lifeline - Individual and Family Floater Plans </h2>
+            <v-col cols="12" lg="9" md="7" sm="12" class="hidden-sm-and-down" >
+              <h1>Welcome to Lifeline - Individual and Family Floater Plans </h1>
               <steps/>
             </v-col>
             <!-- this column is hidden in sm screen size and in screen size smalled than sm -->

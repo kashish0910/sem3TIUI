@@ -5,15 +5,17 @@
       <!-- activate/open the menu or modal on certain ecents for eg: click -->
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="lightblue"
+          color="#223C77"
           dark
           v-bind="attrs"
           v-on="on"
+          outlined
         >
           KNOW MORE ABOUT TPA
         </v-btn>
       </template>
-      <v-card>
+      <!-- added colour and changed the theme to light -->
+      <v-card color="white" light>
         <v-card-title>
           <span class="headline">Third Party Adminstrators</span>
         </v-card-title>

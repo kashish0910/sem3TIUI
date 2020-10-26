@@ -6,7 +6,9 @@
     <v-col class="shrink" >
       <v-btn justify="center"
         class="ma-2"
-        color="primary"
+        color="#223C77" light outlined
+        width="180"
+        height="100"
         @click="expand = !expand">
         ELITE
       </v-btn>
@@ -16,7 +18,10 @@
             v-show="expand"
             height="260"
             width="300"
-            class="mx-auto">
+            class="mx-auto"
+            color="white">
+            <strong class="blue--text text--darken 4">
+
            <v-card-text>
              <v-row>
              1. Worldwide emergency hospitalization   (excluding US/Canada)</v-row>
@@ -27,6 +32,7 @@
              <v-row >
               4. Pre-Existing Disease waiting period - 2   years </v-row>
            </v-card-text>
+            </strong>
          </v-card>
        </v-row>
       </v-expand-transition>

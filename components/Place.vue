@@ -1,12 +1,14 @@
 <template>
   <v-combobox
     v-model="chips"
-    :items="items"
+    :items="items" 
     chips
     clearable
+    color="black" light fixed app
     label="City Living In"
     multiple
-     solo>
+     solo
+     outlined>
   
   </v-combobox>
 </template>

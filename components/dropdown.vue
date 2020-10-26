@@ -2,13 +2,15 @@
   <v-container id="dropdown-example">
     <v-row justify="center">
       <!-- grid added for responsiveneess -->
-      <v-col cols="12" md="6" sm=8>
+      <v-col cols="12" md="6" sm=8 >
+        <strong class="blue--text text--darken-4">
         <p>Please Select your TPA</p>
+        </strong>
          <!-- the overflow button gives the command for dropdown when clicked -->
-        <v-overflow-btn
+        <v-overflow-btn 
           class="my-2"
           :items="dropdown_edit"
-          
+          color="black" light fixed app
           editable
           item-value="text"
           outlined

@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-row justify="center">
+    <v-row justify="center" >
       <v-col cols="12" md="6" sm=8>
+        
         <v-menu
+        color="black" light fixed app
           ref="menu1"
           v-model="menu1"
           :close-on-content-click="false"
@@ -15,8 +17,13 @@
             <!-- text field with label, hint and persistent hint -->
             <!-- v-bind used to pass down the attributes...used in case of data changing -->
             <!-- blur is used to loose focus ...here date element loses focus when changed to another -->
+          
+            <!-- changed the colour of label and text field -->
             <v-text-field
+             
               v-model="dateFormatted"
+              color="black" light fixed app
+             
               label="Date of Birth of Insured"
               hint="MM/DD/YYYY format"
               persistent-hint
@@ -25,8 +32,9 @@
               v-on="on"
               outlined
             ></v-text-field>
+           
           </template>
-          <v-date-picker v-model="date" no-title @input="menu1 = false"></v-date-picker>
+          <v-date-picker v-model="date" no-title @input="menu1 = false" color="blue"></v-date-picker>
         </v-menu>
         
       </v-col>
@@ -65,3 +73,5 @@
     },
   }
 </script>
+<style>
+</style>
