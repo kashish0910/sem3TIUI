@@ -5,7 +5,7 @@
       <v-card class="mx-auto" max-width="500" color="#223C77" rounded="rounded">
         <v-img src="Health-Insurance-renew.png" height="330px"></v-img>
 
-        <v-card-title> Lifeline Health Insurace </v-card-title>
+        <v-card-title> Lifeline Health Insurance </v-card-title>
 
         <v-card-subtitle>
           Protection plans that works best for you and your family.
