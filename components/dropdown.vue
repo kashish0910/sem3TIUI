@@ -1,11 +1,11 @@
 <template>
   <v-container id="dropdown-example">
-    <v-row justify="center">
+    <v-row justify="center"  style="font-family:Segoe UI" class="font-weight-regular">
       <!-- grid added for responsiveneess -->
       <v-col cols="12" md="6" sm=8 >
-        <strong class="blue--text text--darken-4">
+    
         <p>Please Select your TPA</p>
-        </strong>
+        
          <!-- the overflow button gives the command for dropdown when clicked -->
         <v-overflow-btn 
           class="my-2"

@@ -1,6 +1,6 @@
 <template>
-  <v-row justify="center">
-    <v-col md="12" cols="12">
+  <v-row >
+    <v-col md="10" cols="12" class="ml-md-16">
       <v-form ref="form" v-model="valid" lazy-validation>
         <!-- three text fields were created within a row and column -->
         <v-container>
@@ -12,8 +12,11 @@
             fixed
             app
             :rules="nameRules"
+            style="font-family:Segoe UI" 
+            
             label="Name"
-            class="required"
+            class="required; font-weight-regular"
+            
             outlined
           >
             required>
@@ -26,7 +29,9 @@
             fixed
             app
             :rules="emailRules"
+            style="font-family:Segoe UI" 
             label="E-mail"
+             class="required; font-weight-regular"
             outlined
           >
             required>
@@ -39,7 +44,9 @@
             fixed
             app
             :rules="phonenumberRules"
+            style="font-family:Segoe UI" 
             label="Phone Number"
+             class="required; font-weight-regular"
             outlined
           >
             required>

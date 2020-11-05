@@ -6,22 +6,22 @@
           <v-stepper-header>
             <!-- 4 stepper form..once one completed, it takes to second with a click -->
 
-            <v-stepper-step :complete="e1 > 1" step="1"
+            <v-stepper-step :complete="e1 > 1" step="1" style="font-family:Segoe UI" class="font-weight-regular"
               >Proposer's Details</v-stepper-step
             >
 
             <v-divider></v-divider>
 
-            <v-stepper-step :complete="e1 > 2" step="2"
+            <v-stepper-step :complete="e1 > 2" step="2" style="font-family:Segoe UI" class="font-weight-regular"
               >Select Plan</v-stepper-step
             >
 
             <v-divider></v-divider>
-            <v-stepper-step :complete="e1 > 3" step="3"
+            <v-stepper-step :complete="e1 > 3" step="3" style="font-family:Segoe UI" class="font-weight-regular"
               >Plan Details</v-stepper-step
             >
             <v-divider></v-divider>
-            <v-stepper-step :complete="e1 > 4" step="4"
+            <v-stepper-step :complete="e1 > 4" step="4" style="font-family:Segoe UI" class="font-weight-regular"
               >Place Details</v-stepper-step
             >
           </v-stepper-header>
@@ -33,7 +33,7 @@
                   <v-card
                     class="mb-12"
                     color="white"
-                    height="520px"
+                    height="580px"
                     id="create"
                     flat
                   >
@@ -51,7 +51,7 @@
               </v-row>
               <v-row justify="center">
                 
-                <v-btn color="#223C77" @click="e1 = 2" dark width="200"> Continue </v-btn>
+                <v-btn color="#223C77" @click="e1 = 2" dark width="400"> Continue </v-btn>
               </v-row>
             </v-stepper-content>
 
@@ -64,10 +64,10 @@
                 flat
               >
                 <v-container>
-                  <v-row justify="center">
-                    <strong class="grey--text text--darken-2">
+                  <v-row justify="center" style="font-family:Segoe UI" class="font-weight-regular">
+                    
                       Select Plan Type
-                    </strong>
+                  
                   </v-row>
                   <v-row justify="center">
                     <!-- <buttons/>  -->
@@ -99,7 +99,7 @@
               <v-card
                 class="mb-12"
                 color="white"
-                height="610px"
+                height="660px"
                 id="create"
                 flat
               >
@@ -116,10 +116,9 @@
                       <elitebutton />
                     </v-col>
                   </v-row>
-                  <v-row justify="center">
-                    <strong class="blue--text text--darken-4">
+                  <v-row justify="center" style="font-family:Segoe UI" class="font-weight-regular">
                       Select your preffered sum insured
-                    </strong>
+                    
                   </v-row>
                   <v-row justify="center">
                     <radiobutton />
@@ -150,18 +149,16 @@
                 flat
               >
                 <v-container>
-                  <v-row justify="center">
-                    <strong class="blue--text text--darken-4">
+                  <v-row justify="center"  style="font-family:Segoe UI" class="font-weight-regular">
                       Select Place
-                    </strong>
+                
                   </v-row>
                   <v-row>
                     <Place />
                   </v-row>
-                  <v-row justify="center">
-                    <strong class="blue--text text--darken-4">
+                  <v-row justify="center"  style="font-family:Segoe UI" class="font-weight-regular">
                       Popular Places
-                    </strong>
+                    
                   </v-row>
 
                   <v-row justify="center">

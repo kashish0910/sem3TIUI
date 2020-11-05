@@ -1,6 +1,9 @@
 <template>
  <v-row>
-    <v-col md="5" sm="12" cols="12">
+   <v-row class="hidden-md-and-up">
+   <v-img src="Health-Insurance-renew-mobile.png" height="203px" width="290"></v-img>
+   </v-row>
+    <v-col md="5" sm="12" cols="12" style="font-family:Segoe UI" class="font-weight-regular">
      <div>
        <v-breadcrumbs :items="items">
          <template v-slot:divider>
@@ -18,7 +21,7 @@
     data: () => ({
       items: [
         {
-          text: 'Home',
+          text: 'Home', 
           // This function helps to show on which page we are not there, when its false the colur of text is blue
           disabled: false,
           // href: 'breadcrumbs_dashboard',

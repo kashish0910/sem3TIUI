@@ -23,13 +23,13 @@
             <strong class="blue--text text--darken 4">
 
            <v-card-text>
-             <v-row>
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
              1. Worldwide emergency hospitalization   (excluding US/Canada)</v-row>
-             <v-row>
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
              2. International treatment for 11 CI</v-row>
-             <v-row >
+             <v-row style="font-family:Segoe UI" class="font-weight-regular" >
              3. Maternity & OPD covered</v-row>
-             <v-row >
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
               4. Pre-Existing Disease waiting period - 2   years </v-row>
            </v-card-text>
             </strong>

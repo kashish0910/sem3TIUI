@@ -34,7 +34,7 @@
               <!-- rows and columns defined to make the step responsive -->
               <v-row>
                 <v-col md="12" sm="12" cols="12">
-                  <v-card class="mb-12" color="white" height="700px">
+                  <v-card class="mb-12" color="white" height="600px">
                     <v-container>
                       <v-row justify="center">
                         <v-col cols="10" md="10" sm="10">
@@ -49,14 +49,14 @@
               </v-row>
 
               <v-row justify="center">
-                <v-btn color="#223C77" @click="e1 = 2" dark width="100">
+                <v-btn color="#223C77" @click="e1 = 2" dark width="300" >
                   Continue
                 </v-btn>
               </v-row>
             </v-stepper-content>
 
             <v-stepper-content step="2">
-              <v-card class="mb-12" color="white" height="500px">
+              <v-card class="mb-12" color="white" height="550px">
                 <v-container>
                   <v-row justify="center"> Select Plan Type </v-row>
                   <v-row justify="center">
@@ -76,20 +76,20 @@
 
               <!-- continue button takes to next form, back takes to previous..click command helps to carry this function -->
               <v-row justify="center">
-                <v-btn color="#223C77" @click="e1 = 3" dark width="100">
+               
+                <v-btn class="ml-sm-8 ml-8 mr-6" @click="e1 = 1"> Back </v-btn>
+                <v-btn color="#223C77" @click="e1 = 3" dark width="140">
                   Continue
                 </v-btn>
-
-                <v-btn class="ml-sm-8 ml-8" @click="e1 = 1"> Back </v-btn>
               </v-row>
             </v-stepper-content>
 
             <v-stepper-content step="3">
-              <v-card class="mb-12" color="white" height="1100px">
+              <v-card class="mb-12" color="white" height="600px">
                 <v-container>
                   <v-row justify="center">
                     <!-- <buttons/>  -->
-                    <v-col md="4" sm="4">
+                    <!-- <v-col md="4" sm="4">
                       <classicbutton />
                     </v-col>
                     <v-col md="4" sm="4">
@@ -97,7 +97,7 @@
                     </v-col>
                     <v-col md="4" sm="4" class="mt-0">
                       <elitebutton />
-                    </v-col>
+                    </v-col> -->
                   </v-row>
                   <v-row justify="center">
                     Select your preffered sum insured
@@ -113,11 +113,12 @@
                 </v-container>
               </v-card>
               <v-row justify="center">
+                
+
+                <v-btn class="ml-sm-8 ml-8 mr-6" @click="e1 = 2"> Back </v-btn>
                 <v-btn color="#223C77" @click="e1 = 4" dark width="100">
                   Continue
                 </v-btn>
-
-                <v-btn class="ml-sm-8 ml-8" @click="e1 = 2"> Back </v-btn>
               </v-row>
             </v-stepper-content>
 
@@ -136,12 +137,13 @@
                 </v-container>
               </v-card>
               <v-row justify="center">
+                <v-btn class="ml-sm-8 ml-8 mr-6" @click="e1 = 3"> Back </v-btn>
                 <v-btn href="premiumpage" color="#223C77" dark width="100">
                   <!-- @click="loading"> -->
                   Continue
                 </v-btn>
 
-                <v-btn class="ml-sm-8 ml-8" @click="e1 = 3"> Back </v-btn>
+               
               </v-row>
             </v-stepper-content>
           </v-stepper-items>

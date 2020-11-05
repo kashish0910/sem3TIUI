@@ -25,16 +25,17 @@
             color="white"
           >
             <strong class="blue--text">
-              <v-card-text>
-                <v-row>
-                  1. 20% No Claim Bonus every year up to max of 100%</v-row
-                >
-                <v-row>
-                  2. Annual Health Check up & Emergency domestic
-                  evacuation</v-row
-                >
-                <v-row> 3. Second opinion for 11 Critical illnesses</v-row>
-                <v-row> 4. Second opinion for 11 Critical illnesses</v-row>
+              <v-card-text >
+                <v-row style="font-family:Segoe UI" class="font-weight-regular">
+              1. Organ donor expenses covered up to Sum Insured</v-row>
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
+             2. Pre & Post hospitalization covered up to Sum Insured</v-row>
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
+             3. Covers Ayush treatment & vaccination for animal bite</v-row >
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
+             4. Pre-Existing Disease waiting period - 4 years</v-row>
+                  
+                  
               </v-card-text>
             </strong>
           </v-card>

@@ -2,7 +2,7 @@
   <!--Your App Starts Here -->
   <v-app id="inspire">
     <!--Header -->
-    <v-app-bar color="white" height="25" dark fixed app>
+    <v-app-bar color="white" height="27" dark fixed app>
       <v-toolbar-title></v-toolbar-title>
       <!-- Component Example -->
       <v-spacer></v-spacer>
@@ -15,7 +15,7 @@
             height="30"
             class="px-md-2 px-sm-2 px-0"
           >
-            <p>
+            <p style="font-family:Segoe UI" class="font-weight-regular"> 
               New Policy: 022-50061070 | Customer Service: 1860 425 0000 | Motor
               Claim Intimation / Crop Insurance: 1800 568 9999
             </p>
@@ -35,7 +35,6 @@
           <instarenew />
           <contactus />
           <blogs />
-
           <signin />
           <v-btn icon>
             <v-icon color="black">mdi-magnify</v-icon>
@@ -43,12 +42,15 @@
         </v-row>
         <!-- this column is hidden in md screen size and in screen size bigger than md -->
         <v-row class="hidden-md-and-up">
-          <v-col sm="10">
+          <v-col sm="1" cols="2" class="mb-sm-6 mb-1  mx-sm-2">
+          <hamburger />
+          </v-col>
+          <v-col sm="10" cols="7" class="mb-1">
             <VuetifyLogo />
           </v-col>
-          <v-col sm="1" class="mb-sm-6 mb-4 mx-sm-2 mx-0">
-            <hamburger />
-          </v-col>
+          <v-btn icon class="ma-6">
+            <v-icon color="black">mdi-magnify</v-icon>
+          </v-btn>
         </v-row>
       </template>
     </v-app-bar>

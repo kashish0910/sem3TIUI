@@ -1,4 +1,4 @@
 <template>
   <!-- Sign In Button in the global navigation which is persistent throughout the website  -->
-  <v-btn  text large color= "rgb(29, 83, 119)"  >Sign In</v-btn>
+  <v-btn medium rounded color="primary" dark style=" color:white; font-family:Segoe UI" class="font-weight-semi-bold" >Sign In</v-btn>
 </template>

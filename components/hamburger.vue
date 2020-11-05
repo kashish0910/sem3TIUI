@@ -6,17 +6,24 @@
       open-on-hover
       color="white" light
       top
-      offset-y>
+      offset-y
+      id="create" flat>
       <template v-slot:activator="{ on, attrs }">
+        <v-col sm=0 class="mb-7 ps-0">
         <v-btn
-          color="#223C77"
-          dark
+          color="white"
+          dark width="10"
+          light
           v-bind="attrs"
           v-on="on"
-          height="48"
-          width="20">
-          MENU
+          >
+        
+        <v-app-bar-nav-icon
+        color="#656464"
+        v-bind="attrs"
+        v-on="on"></v-app-bar-nav-icon>
         </v-btn>
+        </v-col>
       </template>
 
       <v-list>

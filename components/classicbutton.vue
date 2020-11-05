@@ -28,13 +28,13 @@
            <strong class="blue--text text--darken 4">
 
            <v-card-text>
-              <v-row>
+              <v-row style="font-family:Segoe UI" class="font-weight-regular">
               1. Organ donor expenses covered up to Sum Insured</v-row>
-             <v-row>
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
              2. Pre & Post hospitalization covered up to Sum Insured</v-row>
-             <v-row >
+             <v-row style="font-family:Segoe UI" class="font-weight-regular">
              3. Covers Ayush treatment & vaccination for animal bite</v-row >
-             <v-row >
+             <v-row style="font-family:Segoe UI" class="font-weight-regular" >
              4. Pre-Existing Disease waiting period - 4 years</v-row>
            </v-card-text>
            </strong>
