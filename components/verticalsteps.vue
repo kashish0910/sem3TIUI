@@ -56,7 +56,7 @@
             </v-stepper-content>
 
             <v-stepper-content step="2">
-              <v-card class="mb-12" color="white" height="550px">
+              <v-card class="mb-12" color="white" height="590px">
                 <v-container>
                   <v-row justify="center"> Select Plan Type </v-row>
                   <v-row justify="center">

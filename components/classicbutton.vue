@@ -25,10 +25,10 @@
            width="300"
            class="mx-auto"
            color="white">
-           <strong class="blue--text text--darken 4">
+           <strong class="blue--text text--#223C77">
 
            <v-card-text>
-              <v-row style="font-family:Segoe UI" class="font-weight-regular">
+              <v-row style="font-family:Segoe UI " class="font-weight-regular" >
               1. Organ donor expenses covered up to Sum Insured</v-row>
              <v-row style="font-family:Segoe UI" class="font-weight-regular">
              2. Pre & Post hospitalization covered up to Sum Insured</v-row>
